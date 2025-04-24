@@ -1,0 +1,255 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9f0;
+    color: #2c2c2c;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .dark {
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 204, 128, 0.8);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3e2723;
+  }
+  
+  #theme-toggle {
+    padding: 0.4rem 1rem;
+    border: none;
+    background-color: #3e2723;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    padding: 3rem;
+    background-image: linear-gradient(to right, #ffe0b2, #ffcc80);
+    text-align: center;
+    border-bottom: 4px solid #ffb74d;
+    background-image: url('banner.jpeg');  /* Path to your banner image */
+    background-size: cover;   /* Ensures the image covers the entire section */
+    background-position: center center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: #fb8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-section {
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .search-section input {
+    width: 60%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+  }
+  
+  .categories {
+    padding: 2rem;
+  }
+  
+  .category-cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 180px;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff3e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    animation: fadeInUp 0.5s ease-out both;
+    color: #000;
+  }
+  
+  .dark .card {
+    background-color: #ffe0b2;
+    color: #000; /* Ensure text is black in dark mode */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .restaurant-list {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .restaurant-card {
+    background-color: #fff8e1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s;
+    color: #000;
+  }
+  
+  .dark .restaurant-card {
+    background-color: #ffecb3;
+    color: #000; /* Keep text black for contrast */
+  }
+  
+  .restaurant-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .restaurant-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #d32f2f;
+  }
+  
+  .favorite.active {
+    color: #f44336;
+  }
+  
+  .cta-section {
+    background-color: #ffecb3;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-top: 2px solid #ffc107;
+    border-bottom: 2px solid #ffc107;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #fb8c00;
+  }
+  
+  footer {
+    background-color: #f9f8f5;
+    color:black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .social-icons {
+    margin-top: 0.5rem;
+  }
+  
+  .social-icons a {
+    margin: 0 0.5rem;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff6600;
+    padding: 0.5rem 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* Optional hover effect */
+  /* Dark mode adjustments */
+  body.dark-mode .logo {
+    color: #ffa94d;
+    text-shadow: 1px 1px 3px rgba(255, 165, 0, 0.2);
+  }
+  .logo img {
+    height: 40px;  /* Adjusted height */
+    width: auto;   /* Automatically adjusts width according to height */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+  
